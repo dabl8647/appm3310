@@ -30,16 +30,6 @@ dy = ndimage.sobel(im, 1)  # vertical derivative
 # https://docs.scipy.org/doc/numpy/reference/generated/numpy.hypot.html
 mag = numpy.hypot(dx, dy)  # magnitude
 
-#mag *= 255.0 / numpy.max(mag)  # normalize (Q&D)
+mag *= 255.0 / numpy.max(mag)  # normalize (Q&D)
 
 scipy.misc.imsave('sobel.png', mag)
-
-#import matplotlib.pyplot as plt
-#result = ndimage.sobel(im)
-#fig = plt.figure()
-#plt.gray()
-#ax1 = fig.add_subplot(121)
-#ax2 = fig.add_subplot(122)
-#ax1.imshow(im)
-#ax2.imshow(result)
-#plt.show()
