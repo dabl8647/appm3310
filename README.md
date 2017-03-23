@@ -11,3 +11,4 @@
 ### References:
 - <https://en.wikipedia.org/wiki/Sobel_operator>
 - <https://www.youtube.com/watch?v=uihBwtPIBxM>
+- <https://www.researchgate.net/publication/239398674_An_Isotropic_3_3_Image_Gradient_Operator>
